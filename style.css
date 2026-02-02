@@ -381,6 +381,67 @@ body {
     font-weight: bold;
 }
 
+/* Partners Section */
+.partners {
+    padding: 6rem 0;
+    background: white;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.partner-card {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.partner-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.partner-card:hover {
+    border-color: var(--light-green);
+    box-shadow: 0 8px 30px rgba(45, 80, 22, 0.15);
+    transform: translateY(-5px);
+}
+
+.partner-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    filter: grayscale(0.2);
+}
+
+.partner-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.partner-specialty {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
 /* Why Choose Section */
 .why-choose {
     padding: 6rem 0;
@@ -711,6 +772,10 @@ body {
     }
 
     .advantages {
+        grid-template-columns: 1fr;
+    }
+
+    .partners-grid {
         grid-template-columns: 1fr;
     }
 
