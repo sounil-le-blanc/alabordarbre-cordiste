@@ -15,7 +15,7 @@
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <img src="images/logo-hero.png" alt="Alabordarbre Logo" class="hero-logo">
+            <img src="images/logo-hero.png" alt="A L'ABORD D'ARBRE Logo" class="hero-logo">
             <h1 class="hero-title">
                 <span class="brand">A L'ABORD D'ARBRE</span>
                 <span class="tagline">Travaux en hauteur & Élagage professionnel</span>
@@ -174,6 +174,91 @@
         </div>
     </section>
 
+    <!-- Réalisations Gallery Section -->
+    <section class="realisations" id="realisations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Nos réalisations</h2>
+                <p class="section-subtitle">Un aperçu de notre savoir-faire en images</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/realisations/couverture-01.jpg" alt="Rénovation charpente et couverture" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Charpente & Couverture</h3>
+                        <p>Rénovation complète</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/realisations/couverture-02.jpg" alt="Travaux de couverture en hauteur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Toiture difficile d'accès</h3>
+                        <p>Intervention sur cordes</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/realisations/chateau-eau.jpg" alt="Inspection château d'eau" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Château d'eau</h3>
+                        <p>Inspection & maintenance</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/realisations/industriel-cheminee.jpg" alt="Descente en rappel cheminée industrielle" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Industriel</h3>
+                        <p>Intervention en cheminée</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/realisations/elagage-arbre.jpg" alt="Élagage en hauteur" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Élagage</h3>
+                        <p>Taille en milieu urbain</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/realisations/elagage-hiver.jpg" alt="Élagage et abattage hiver" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Abattage délicat</h3>
+                        <p>Conditions hivernales</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/realisations/facade-urbaine.jpg" alt="Travaux sur façade urbaine" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Façade urbaine</h3>
+                        <p>Réparation en hauteur</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/realisations/manutention.jpg" alt="Manutention objets lourds" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Manutention</h3>
+                        <p>Levage d'objets lourds</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/realisations/patrimoine-statue.jpg" alt="Restauration patrimoine statue" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Patrimoine</h3>
+                        <p>Restauration de statue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Why Choose Section -->
     <section class="why-choose">
         <div class="why-choose-background"></div>
@@ -181,7 +266,7 @@
             <div class="why-choose-content">
                 <div class="why-choose-text">
                     <span class="section-label">Garanties</span>
-                    <h2 class="section-title">Pourquoi Alabordarbre ?</h2>
+                    <h2 class="section-title">Pourquoi A L'ABORD D'ARBRE ?</h2>
                     <div class="advantages">
                         <div class="advantage">
                             <div class="advantage-icon">🎯</div>
@@ -325,7 +410,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="images/logo-footer.png" alt="Alabordarbre Logo" class="footer-logo">
+                    <img src="images/logo-footer.png" alt="A L'ABORD D'ARBRE Logo" class="footer-logo">
                     <p>Vijay Le Blanc - Expert en travaux en hauteur</p>
                 </div>
                 <div class="footer-links">
@@ -335,7 +420,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Alabordarbre - Vijay Le Blanc. Tous droits réservés.</p>
+                <p>&copy; 2024 A L'ABORD D'ARBRE - Vijay Le Blanc. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
@@ -366,7 +451,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.service-card, .advantage, .section-header, .partner-card').forEach(el => {
+        document.querySelectorAll('.service-card, .advantage, .section-header, .partner-card, .gallery-item').forEach(el => {
             observer.observe(el);
         });
 
