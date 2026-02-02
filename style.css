@@ -91,18 +91,23 @@ body {
     }
 }
 
-.badge {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background: var(--primary-orange);
-    color: var(--text-light);
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 50px;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+/* Hero Logo */
+.hero-logo {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 2rem;
+    display: block;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+    animation: logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0%, 100% { 
+        transform: translateY(0px) scale(1); 
+    }
+    50% { 
+        transform: translateY(-10px) scale(1.05); 
+    }
 }
 
 .hero-title {
@@ -381,6 +386,22 @@ body {
     padding: 6rem 0;
     background: var(--dark-green);
     color: var(--text-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-choose-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/logo-background.png');
+    background-size: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+    pointer-events: none;
 }
 
 .why-choose .section-label {
@@ -599,6 +620,19 @@ body {
     display: none;
 }
 
+/* Footer Logo */
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -658,6 +692,11 @@ body {
         padding: 0 1rem;
     }
 
+    .hero-logo {
+        width: 100px;
+        height: 100px;
+    }
+
     .hero-cta {
         flex-direction: column;
         align-items: stretch;
@@ -685,7 +724,3 @@ body {
         gap: 1rem;
     }
 }
-
-
-
-
