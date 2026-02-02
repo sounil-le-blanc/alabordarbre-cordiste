@@ -475,7 +475,6 @@ body {
     aspect-ratio: 4/3;
     overflow: hidden;
     border-radius: 12px;
-    cursor: pointer;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
     opacity: 0;
@@ -487,6 +486,11 @@ body {
     transform: scale(1);
 }
 
+.gallery-item:hover {
+    box-shadow: 0 8px 30px rgba(45, 80, 22, 0.2);
+    transform: translateY(-5px) scale(1.02);
+}
+
 .gallery-item img {
     width: 100%;
     height: 100%;
@@ -495,36 +499,7 @@ body {
 }
 
 .gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(45, 80, 22, 0.95), transparent);
-    padding: 2rem 1.5rem 1.5rem;
-    transform: translateY(100%);
-    transition: transform 0.4s ease;
-    color: var(--text-light);
-}
-
-.gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-overlay h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-    text-transform: uppercase;
-}
-
-.gallery-overlay p {
-    font-size: 0.95rem;
-    opacity: 0.9;
+    transform: scale(1.08);
 }
 
 /* Why Choose Section */
