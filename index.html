@@ -6,6 +6,20 @@
     <title>A L'ABORD D'ARBRE - Vijay Le Blanc | Élagage & Travaux en Hauteur</title>
     <meta name="description" content="Expert en élagage et travaux sur cordes. Bâtiment urbain, couverture, façade, industriel. Intervention rapide et professionnelle.">
     
+    <!-- Open Graph -->
+    <meta property="og:title" content="A L'ABORD D'ARBRE - Vijay Le Blanc | Élagage & Travaux en Hauteur">
+    <meta property="og:description" content="Expert en élagage et travaux sur cordes. Bâtiment urbain, couverture, façade, industriel. Intervention rapide et professionnelle.">
+    <meta property="og:image" content="https://alabordarbre-cordiste.vercel.app/images/apercu.jpg">
+    <meta property="og:url" content="https://alabordarbre-cordiste.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A L'ABORD D'ARBRE">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A L'ABORD D'ARBRE - Vijay Le Blanc | Élagage & Travaux en Hauteur">
+    <meta name="twitter:description" content="Expert en élagage et travaux sur cordes. Bâtiment, couverture, façade, industriel.">
+    <meta name="twitter:image" content="https://alabordarbre-cordiste.vercel.app/images/apercu.jpg">
+    
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -194,35 +208,27 @@
                 <div class="gallery-item">
                     <img src="images/realisations/couverture-01.jpg" alt="Rénovation charpente et couverture" loading="lazy">
                 </div>
-
                 <div class="gallery-item">
                     <img src="images/realisations/couverture-02.jpg" alt="Travaux de couverture en hauteur" loading="lazy">
                 </div>
-
                 <div class="gallery-item">
                     <img src="images/realisations/chateau-eau.jpg" alt="Inspection château d'eau" loading="lazy">
                 </div>
-
                 <div class="gallery-item">
                     <img src="images/realisations/industriel-cheminee.jpg" alt="Descente en rappel cheminée industrielle" loading="lazy">
                 </div>
-
                 <div class="gallery-item">
                     <img src="images/realisations/elagage-arbre.jpg" alt="Élagage en hauteur" loading="lazy">
                 </div>
-
                 <div class="gallery-item">
                     <img src="images/realisations/elagage-hiver.jpg" alt="Élagage et abattage hiver" loading="lazy">
                 </div>
-
                 <div class="gallery-item">
                     <img src="images/realisations/facade-urbaine.jpg" alt="Travaux sur façade urbaine" loading="lazy">
                 </div>
-
                 <div class="gallery-item">
                     <img src="images/realisations/manutention.jpg" alt="Manutention objets lourds" loading="lazy">
                 </div>
-
                 <div class="gallery-item">
                     <img src="images/realisations/patrimoine-statue.jpg" alt="Restauration patrimoine statue" loading="lazy">
                 </div>
@@ -324,10 +330,7 @@
 
                 <div class="contact-form-wrapper">
                     <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                        <!-- Web3Forms Access Key -->
                         <input type="hidden" name="access_key" value="f5294746-8862-49a3-a649-8e50e78c4de8">
-                        
-                        <!-- Configuration Web3Forms -->
                         <input type="hidden" name="subject" value="Nouvelle demande depuis Alabordarbre">
                         <input type="hidden" name="from_name" value="Site Alabordarbre">
                         <input type="hidden" name="redirect" value="https://alabordarbre.vercel.app/?success=true">
@@ -359,13 +362,11 @@
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         
-                        <!-- Honeypot anti-spam (invisible) -->
                         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                         
                         <button type="submit" class="btn btn-primary btn-full">Envoyer ma demande</button>
                     </form>
                     
-                    <!-- Message de succès -->
                     <div class="form-success" style="display: none;">
                         <div class="success-icon">✅</div>
                         <h3>Message envoyé !</h3>
@@ -397,7 +398,6 @@
     </footer>
 
     <script>
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -408,7 +408,6 @@
             });
         });
 
-        // Animate on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -426,7 +425,6 @@
             observer.observe(el);
         });
 
-        // Web3Forms submission handler
         const form = document.querySelector('.contact-form');
         const successMessage = document.querySelector('.form-success');
         
@@ -451,7 +449,6 @@
                     form.style.display = 'none';
                     successMessage.style.display = 'block';
                     
-                    // Reset après 5 secondes
                     setTimeout(() => {
                         form.style.display = 'block';
                         successMessage.style.display = 'none';
@@ -463,13 +460,12 @@
                     throw new Error('Erreur lors de l\'envoi');
                 }
             } catch (error) {
-                alert('Erreur lors de l\'envoi du message. Veuillez réessayer ou nous contacter directement par téléphone.');
+                alert('Erreur lors de l\'envoi du message. Contactez-nous directement par téléphone.');
                 submitButton.textContent = originalText;
                 submitButton.disabled = false;
             }
         });
 
-        // Check for success parameter in URL
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('success') === 'true') {
             form.style.display = 'none';
